@@ -35,9 +35,9 @@ public:
     }
 
     void Read() {
-        cout << "Ââåä³òü êîîðäèíàòó x: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ x: ";
         cin >> x;
-        cout << "Ââåä³òü êîîðäèíàòó y: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñƒ y: ";
         cin >> y;
     }
 
@@ -104,9 +104,9 @@ public:
     }
 
     friend istream& operator>>(istream& is, Point& p) {
-        cout << "Ââåä³òü x: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ x: ";
         is >> p.x;
-        cout << "Ââåä³òü y: ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ y: ";
         is >> p.y;
         return is;
     }
@@ -117,17 +117,17 @@ int main() {
     SetConsoleCP(1251);
     setlocale(LC_ALL, "Ukrainian");
 
-    cout << "Äåìîíñòðàö³ÿ ïåðåâàíòàæåíèõ îïåðàö³é:" << endl;
+    cout << "Ð”ÐµÐ¼Ð¾Ð½ÑÑ‚Ñ€Ð°Ñ†Ñ–Ñ Ð¿ÐµÑ€ÐµÐ²Ð°Ð½Ñ‚Ð°Ð¶ÐµÐ½Ð¸Ñ… Ð¾Ð¿ÐµÑ€Ð°Ñ†Ñ–Ð¹:" << endl;
 
     Point p1, p2, p3;
 
-    cout << "Ââåä³òü òî÷êó p1:" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ‚Ð¾Ñ‡ÐºÑƒ p1:" << endl;
     cin >> p1;
 
-    cout << "Ââåä³òü òî÷êó p2:" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ‚Ð¾Ñ‡ÐºÑƒ p2:" << endl;
     cin >> p2;
 
-    cout << "Ðåçóëüòàòè:" << endl;
+    cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¸:" << endl;
     cout << "p1 = " << p1 << endl;
     cout << "p2 = " << p2 << endl;
 
@@ -138,18 +138,19 @@ int main() {
     cout << "p1 - p2 = " << p3 << endl;
 
     if (p1 == p2) {
-        cout << "p1 == p2: òî÷êè çá³ãàþòüñÿ" << endl;
+        cout << "p1 == p2: Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð·Ð±Ñ–Ð³Ð°ÑŽÑ‚ÑŒÑÑ" << endl;
     }
     else {
-        cout << "p1 == p2: òî÷êè íå çá³ãàþòüñÿ" << endl;
+        cout << "p1 == p2: Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð½Ðµ Ð·Ð±Ñ–Ð³Ð°ÑŽÑ‚ÑŒÑÑ" << endl;
     }
 
     Point p4;
     p4 = p1;
-    cout << "Ï³ñëÿ p4 = p1: p4 = " << p4 << endl;
+    cout << "ÐŸÑ–ÑÐ»Ñ p4 = p1: p4 = " << p4 << endl;
 
     Point p5 = p1 + p2 - p4;
     cout << "p1 + p2 - p4 = " << p5 << endl;
 
     return 0;
+
 }
